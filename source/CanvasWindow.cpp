@@ -1120,7 +1120,7 @@ CanvasWindow::MessageReceived(BMessage* message)
 					//					BRect canvasWindowFrame;
 					//					canvasWindowFrame.Set (128 + newnum*16, 128 + newnum*16,
 					//						128 + newnum*16 + newWidth - 1, 128 + newnum*16 +
-					//newHeight
+					// newHeight
 					//- 1); 					CanvasWindow *canvasWindow = new CanvasWindow
 					//(canvasWindowFrame, title, map, &ie); canvasWindow->Show();
 					BMessage* ok = new BMessage(BBP_BBITMAP_OPENED);

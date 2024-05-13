@@ -13,7 +13,8 @@ static property_info prop_list[] = {{"Family", SET, DIRECT, "string: family_name
 	{"Shear", SET, DIRECT, "float: 45 .. 135"}, {"Rotation", SET, DIRECT, "float: 0 .. 360"},
 	{"AntiAliasing", SET, DIRECT, "bool: true, false"}, {"Text", SET, DIRECT, "string: text"}, 0};
 
-AttribText::AttribText() : AttribView(BRect(0, 0, 224, 208), lstring(25, "Text"))
+AttribText::AttribText()
+	: AttribView(BRect(0, 0, 224, 208), lstring(25, "Text"))
 {
 	SetViewColor(LightGrey);
 	fFont = BFont(be_plain_font);

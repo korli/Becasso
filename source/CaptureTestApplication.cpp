@@ -35,7 +35,10 @@ main()
 
 const char* SIGNATURE = "application/x-redrackam-testCaptureHandler";
 
-TestApplication::TestApplication() : BApplication(SIGNATURE) {}
+TestApplication::TestApplication()
+	: BApplication(SIGNATURE)
+{
+}
 
 class BitmapView : public BView {
 public:
@@ -48,7 +51,10 @@ private:
 	BBitmap* bitmap;
 };
 
-BitmapView ::BitmapView(BRect a) : BView(a, "BitmapInput", B_FOLLOW_NONE, B_WILL_DRAW) {}
+BitmapView ::BitmapView(BRect a)
+	: BView(a, "BitmapInput", B_FOLLOW_NONE, B_WILL_DRAW)
+{
+}
 
 void
 BitmapView ::Draw(BRect area)

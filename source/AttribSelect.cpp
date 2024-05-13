@@ -6,7 +6,8 @@
 
 static property_info prop_list[] = {0};
 
-AttribSelect::AttribSelect() : AttribView(BRect(0, 0, 128, 40), lstring(21, "Select"))
+AttribSelect::AttribSelect()
+	: AttribView(BRect(0, 0, 128, 40), lstring(21, "Select"))
 {
 	SetViewColor(LightGrey);
 	BStringView* sv =

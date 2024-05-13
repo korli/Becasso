@@ -9,7 +9,8 @@
 static property_info prop_list[] = {{"PenSize", SET, DIRECT, "float: 0 .. 50"},
 	{"ShapeType|Type", SET, DIRECT, "string: FilledOutline, Filled, Outline"}, 0};
 
-AttribPolyblob::AttribPolyblob() : AttribView(BRect(0, 0, 148, 90), lstring(29, "Free Shapes"))
+AttribPolyblob::AttribPolyblob()
+	: AttribView(BRect(0, 0, 148, 90), lstring(29, "Free Shapes"))
 {
 	SetViewColor(LightGrey);
 	lSlid = new Slider(

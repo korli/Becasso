@@ -17,7 +17,8 @@ static property_info prop_list[] = {{"PenSize", SET, DIRECT, "float: 0 .. 50"},
 	{"AbsoluteHeight|AbsY", SET, DIRECT, "float: 0 .. 200"},
 	{"Corners", SET, DIRECT, "string: Relative, Absolute"}, 0};
 
-AttribRoundRect::AttribRoundRect() : AttribView(BRect(0, 0, 148, 190), lstring(32, "Ovals"))
+AttribRoundRect::AttribRoundRect()
+	: AttribView(BRect(0, 0, 148, 190), lstring(32, "Ovals"))
 {
 	SetViewColor(LightGrey);
 	lSlid = new Slider(

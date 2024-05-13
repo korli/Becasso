@@ -11,7 +11,8 @@ static property_info prop_list[] = {{"XSize|Width|HSize", SET, DIRECT, "float: 1
 	{"YSize|Height|VSize", SET, DIRECT, "float: 1 .. 50"},
 	{"Shape|Type", SET, DIRECT, "string: Ellipse, Rectangle"}, 0};
 
-AttribEraser::AttribEraser() : AttribView(BRect(0, 0, 126, 102), lstring(23, "Eraser"))
+AttribEraser::AttribEraser()
+	: AttribView(BRect(0, 0, 126, 102), lstring(23, "Eraser"))
 {
 	SetViewColor(LightGrey);
 	BBox* type = new BBox(BRect(8, 8, 119, 58), "type");

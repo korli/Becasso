@@ -11,7 +11,8 @@
 
 static property_info prop_list[] = {0};
 
-AttribDraw::AttribDraw() : AttribView(BRect(0, 0, 164, 58), lstring(20, "Draw"))
+AttribDraw::AttribDraw()
+	: AttribView(BRect(0, 0, 164, 58), lstring(20, "Draw"))
 {
 	extern bool BuiltInTablet;
 	SetViewColor(LightGrey);

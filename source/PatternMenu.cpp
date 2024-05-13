@@ -12,7 +12,8 @@
 #include "PatternMenuView.h"
 #include "Settings.h"
 
-PatternMenu::PatternMenu(BView* _view, int h, int v, float s) : BMenu("PatternMenu", h * s, v * s)
+PatternMenu::PatternMenu(BView* _view, int h, int v, float s)
+	: BMenu("PatternMenu", h * s, v * s)
 {
 	pattern patterns[MAX_PATTERNS];
 	uchar data[MAX_PATTERNS][8] = {{0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF},
@@ -104,7 +105,10 @@ PatternMenu::FindMarked()
 
 class patternTearInfo {
 public:
-	patternTearInfo(BRect r, PatternMenu* p, BView* s) : dragRect(r), parent(p), someView(s){};
+	patternTearInfo(BRect r, PatternMenu* p, BView* s)
+		: dragRect(r),
+		  parent(p),
+		  someView(s){};
 	BRect dragRect;
 	PatternMenu* parent;
 	BView* someView;

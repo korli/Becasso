@@ -9,7 +9,8 @@
 static property_info prop_list[] = {{"PenSize", SET, DIRECT, "float: 0 .. 50"},
 	{"ShapeType|Type", SET, DIRECT, "string: FilledOutline, Filled, Outline"}, 0};
 
-AttribRect::AttribRect() : AttribView(BRect(0, 0, 148, 90), lstring(31, "Rectangles"))
+AttribRect::AttribRect()
+	: AttribView(BRect(0, 0, 148, 90), lstring(31, "Rectangles"))
 {
 	SetViewColor(LightGrey);
 	lSlid = new Slider(

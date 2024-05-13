@@ -82,7 +82,8 @@ SoundEffect8_11::SoundEffect8_11(char* buffer, int size, int loop, bool toggle)
 }
 
 EffectsPlayer::EffectsPlayer(int bgVolume, int nChannels)
-	: BSubscriber("be-sfx by h+"), fLock("sfx locker")
+	: BSubscriber("be-sfx by h+"),
+	  fLock("sfx locker")
 {
 	/*	set up the area used for remembering what's being played	*/
 	fPlayList = new PlayingEffect[nChannels];

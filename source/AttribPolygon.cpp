@@ -11,7 +11,8 @@
 static property_info prop_list[] = {{"PenSize", SET, DIRECT, "float: 0 .. 50"},
 	{"ShapeType|Type", SET, DIRECT, "string: FilledOutline, Filled, Outline"}, 0};
 
-AttribPolygon::AttribPolygon() : AttribView(BRect(0, 0, 148, 90), lstring(30, "Polygons"))
+AttribPolygon::AttribPolygon()
+	: AttribView(BRect(0, 0, 148, 90), lstring(30, "Polygons"))
 {
 	SetViewColor(LightGrey);
 	lSlid = new Slider(

@@ -88,7 +88,8 @@ BarWindow::StopPressed() const
 }
 
 // Constructor for when using the bitmap stream as source
-ProgressiveBitmapStream::ProgressiveBitmapStream(BBitmap* bitmap) : BPositionIO()
+ProgressiveBitmapStream::ProgressiveBitmapStream(BBitmap* bitmap)
+	: BPositionIO()
 {
 	fWriteOnly = false;	 // Read-only
 	fBitmap = bitmap;

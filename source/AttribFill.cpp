@@ -13,7 +13,8 @@ static property_info prop_list[] = {
 	{"Tolerance|Visual", SET, DIRECT, "float: 0 .. 255"}, {"Red", SET, DIRECT, "int: 0 .. 255"},
 	{"Green", SET, DIRECT, "int: 0 .. 255"}, {"Blue", SET, DIRECT, "int: 0 .. 255"}, 0};
 
-AttribFill::AttribFill() : AttribView(BRect(0, 0, 146, 146), lstring(24, "Fill"))
+AttribFill::AttribFill()
+	: AttribView(BRect(0, 0, 146, 146), lstring(24, "Fill"))
 {
 	SetViewColor(LightGrey);
 	BBox* tolSets = new BBox(BRect(4, 4, 142, 142), "tol");

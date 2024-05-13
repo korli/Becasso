@@ -200,7 +200,8 @@ static property_info prop_list_BBP[] = {{"", {0}, {0}, ""}, 0};
 
 static value_info value_list_BBP[] = {{"BBP_*_BBITMAP", 'BPxx', B_COMMAND_KIND, "See BBP.h"}, 0};
 
-Becasso::Becasso() : BApplication("application/x-sum-becasso")
+Becasso::Becasso()
+	: BApplication("application/x-sum-becasso")
 {
 	fBusy = 0;
 	SetPulseRate(100000);

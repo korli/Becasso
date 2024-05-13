@@ -2870,7 +2870,7 @@ CanvasView::Merge(BBitmap* a, Layer* b, BRect update, bool doselect, bool preser
 #endif
 						} else {
 							//						*dest = (0xFFFFFF00 - (srcpixel & 0xFFFFFF00)) |
-							//sa;
+							// sa;
 							register uint32 ipixel =
 								pixelblend(srcpixel, (0xFFFFFF00 - (srcpixel & 0xFFFFFF00)) | sel);
 #if !defined(BLEND_USES_SHIFTS)
@@ -3119,7 +3119,7 @@ CanvasView::Merge(BBitmap* a, Layer* b, BRect update, bool doselect, bool preser
 									(max_c(sa, da) & 0xFF);
 						} else {
 							//						*dest = (0xFFFFFF00 - (srcpixel & 0xFFFFFF00)) |
-							//sa;
+							// sa;
 							register uint32 ipixel =
 								pixelblend(srcpixel, (0xFFFFFF00 - (srcpixel & 0xFFFFFF00)) | sel);
 							//						register uint32 ipixel = 0xFFFFFF00 - (srcpixel

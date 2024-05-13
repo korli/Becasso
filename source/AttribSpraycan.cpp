@@ -8,7 +8,8 @@ static property_info prop_list[] = {{"Sigma", SET, DIRECT, "float: 1 .. 25"},
 	{"Rate|FlowRate", SET, DIRECT, "float: 1 .. 20"}, {"Fade", SET, DIRECT, "bool: true, false"},
 	0};
 
-AttribSpraycan::AttribSpraycan() : AttribView(BRect(0, 0, 164, 90), lstring(26, "Spraycan"))
+AttribSpraycan::AttribSpraycan()
+	: AttribView(BRect(0, 0, 164, 90), lstring(26, "Spraycan"))
 {
 	SetViewColor(LightGrey);
 	sSlid =

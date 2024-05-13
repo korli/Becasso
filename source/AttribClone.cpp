@@ -13,7 +13,8 @@ static property_info prop_list[] = {{"Spacing", SET, DIRECT, "float: 1 .. 64"},
 	{"Width|XSize", SET, DIRECT, "int: 0 .. 40"}, {"Height|YSize", SET, DIRECT, "int: 0 .. 40"},
 	{"Hardness", SET, DIRECT, "int: 0 .. 100"}, 0};
 
-AttribClone::AttribClone() : AttribView(BRect(0, 0, 160, 280), lstring(35, "Clone"))
+AttribClone::AttribClone()
+	: AttribView(BRect(0, 0, 160, 280), lstring(35, "Clone"))
 {
 	SetViewColor(LightGrey);
 	fSpacing = 1;

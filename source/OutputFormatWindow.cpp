@@ -521,7 +521,8 @@ OutputFormatView::RecursiveSetMode(BView* view)
 
 // InfoLinesView constructor
 InfoLinesView::InfoLinesView(BRect frame, int32 nLines)
-	: BView(frame, "", B_FOLLOW_LEFT_RIGHT | B_FOLLOW_TOP, B_WILL_DRAW), mLines(nLines)
+	: BView(frame, "", B_FOLLOW_LEFT_RIGHT | B_FOLLOW_TOP, B_WILL_DRAW),
+	  mLines(nLines)
 {
 	mLineTexts = new const char*[mLines];  // --SS const
 	for (int32 i = 0; i < mLines; ++i)
